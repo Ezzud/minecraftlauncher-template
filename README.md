@@ -30,7 +30,7 @@
 
 <h2>📜 Installation:</h2>
 
-<h3>Install the workspace</h3>
+<h3>I Install the workspace</h3>
 <p>
 
 - Download all requirements from the requirement section 
@@ -40,7 +40,7 @@
 
 </p>
 
-<h3>Edit your launcher</h3>
+<h3>II Edit your launcher</h3>
 
 <p>
 
@@ -58,7 +58,7 @@
 
 </p>
 
-<h3>Setup the S-Update server</h3>
+<h3>III Setup the S-Update server</h3>
 
 <p>
 
@@ -102,7 +102,7 @@
 </p>
 
 
-<h3>Setup the Bootstrap</h3>
+<h3>IV Setup the Bootstrap</h3>
 
 <p>
 
@@ -121,4 +121,4 @@ Example: "https://example.com/supdate/bootstrap"
 
 </p>
 
-<h4>For any help, join my discord at https://ezzud.fr/discord</h4>
+<h4>❓ For any help, join my discord at https://ezzud.fr/discord</h4>
