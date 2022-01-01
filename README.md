@@ -66,8 +66,10 @@
 - Upload the content of the ZIP file in a folder named **update** in your web hoster
 - Wait for upload
 - Access to the S-Update panel with `https://your-url.com/update`
-- Create admin credentials (cannot be edited after that)
-- Enable S-Update by clicking on the circle
+  ⚠ If you get 404 error, go on `https://your-url.com/update/index.php/`
+  ⚠ If after registering, you didn't get redirected, verify permission (Debian: `chmod -R 777 /var/www/html/update`)
+- Create admin credentials (to reset, delete file **server.json** at update/config/)
+- Enable S-Update by clicking on the circle (if it is already green, he is already activated) 
 - Go on your **Appdata/Roaming/.minecraft/version** folder
 - Go on the folder with the name of the version you chosen
 - Take the yourversion.jar file and rename it by `minecraft.jar`
