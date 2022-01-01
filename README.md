@@ -65,9 +65,9 @@
 - Download the s-update server zip from the releases section
 - Upload the content of the ZIP file in a folder named **update** in your web hoster
 - Wait for upload
-- Access to the S-Update panel with `https://your-url.com/update`
-  ⚠ If you get 404 error, go on `https://your-url.com/update/index.php/`
-  ⚠ If after registering, you didn't get redirected, verify permission (Debian: `chmod -R 777 /var/www/html/update`)
+- Access to the S-Update panel with `https://your-url.com/update`<br />
+  ⚠ If you get 404 error, go on `https://your-url.com/update/index.php/`<br />
+  ⚠ If after registering, you didn't get redirected, verify permission (Debian: `chmod -R 777 /var/www/html/update`)<br />
 - Create admin credentials (to reset, delete file **server.json** at update/config/)
 - Enable S-Update by clicking on the circle (if it is already green, he is already activated) 
 - Go on your **Appdata/Roaming/.minecraft/version** folder
