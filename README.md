@@ -112,7 +112,9 @@
 - Open the `src/fr.ezzud.defaultbootstrap/functions.java` file
 - Edit the file with your informations
 - Replace *YOUR S-UPDATE BOOTSTRAP FOLDER* by your supdate url with **/bootstrap**<br>
-Example: "https://example.com/supdate/bootstrap"
+Example: "https://example.com/update/bootstrap"<br />
+  ⚠ If you get 404 error, go on `https://example.com/update/bootstrap/index.php/`<br />
+  ⚠ If after registering, you didn't get redirected, verify permission (Debian: `chmod -R 777 /var/www/html/update`)<br />
 - Extract the project as a JAR Executable and name it `bootstrap.jar` (not important)
 - **In the S-Update folder**, create a new folder named `bootstrap`
 - Duplicate __the entire__ supdate folder except **bootstrap** folder and **files** folder
