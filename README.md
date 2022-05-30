@@ -52,8 +52,8 @@
 - Change textures in `fr.ezzud.defaultlauncher.resources` if you have textures...
 - Open the `src/fr.ezzud.defaultlauncher/Main.java` file
 - At line 29, Change your Minecraft Game version:<br>
-📢 For example, if you want to make a 1.8-1.12 launcher, replace by ```java new GameVersion("1.12.2 or any version between 1.8 and 1.12", GameType.V1_8_HIGHER);```<br>
-📢 If you want to make a 1.13+ launcher, replace by ```java new GameVersion("1.13.2 or any version higher than 1.13", GameType.V1_13_HIGHER_FORGE);```
+📢 For example, if you want to make a 1.8-1.12 launcher, replace by ```new GameVersion("1.12.2 or any version between 1.8 and 1.12", GameType.V1_8_HIGHER);```<br>
+📢 If you want to make a 1.13+ launcher, replace by ```new GameVersion("1.13.2 or any version higher than 1.13", GameType.V1_13_HIGHER_FORGE);```
 - Extract your project as a Executable JAR and name it **launcher.jar** (Name is important)
 
 </p>
