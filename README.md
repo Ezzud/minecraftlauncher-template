@@ -20,7 +20,8 @@
 <p>
 
 - [OpenAuth v1.0.4](https://ezzud.fr/others/openauth-1.0.4.jar)
-- [OpenLauncherLib v3.0.4](https://ezzud.fr/others/openlauncherlib-3.0.4.jar)
+- **FOR LAUNCHER ONLY** [OpenLauncherLib v3.0.5](https://ezzud.fr/others/openlauncherlib-3.0.5.jar)
+- **FOR BOOTSTRAP ONLY** [OpenLauncherLib v2.1](https://ezzud.fr/others/openlauncherlib-2.1-SNAPSHOT.jar)
 - [S-Update v3.1.0](https://ezzud.fr/others/s-update-3.1.0-BETA.jar)
 - [Swinger v1.0.0](https://ezzud.fr/others/swinger-1.0.0-BETA.jar)
 - Any Web Hoster (with php incuded)
