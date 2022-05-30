@@ -81,7 +81,7 @@
   - `assets` folder from your minecraft appdata
   - `libs` folder from your minecraft appdata"
   in the **files** folder
-<br />
+
 ⚠ **I recommend you to launch Minecraft in your desired version in another appdata folder to get ONLY the assets & libraries for the version you want**
 - Add other folder like "mods" folder or anything your launcher need
 - Open the `supdate/config/ignore.list` file and add every folder and file you want not to be deleted during launcher updates<br>
