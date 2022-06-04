@@ -14,6 +14,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 import fr.litarvan.openauth.AuthenticationException;
+import fr.litarvan.openauth.microsoft.MicrosoftAuthenticationException;
 import fr.theshark34.openlauncherlib.LaunchException;
 import fr.theshark34.openlauncherlib.util.Saver;
 import fr.theshark34.openlauncherlib.util.ramselector.RamSelector;
@@ -104,14 +105,27 @@ public class Panel extends JPanel implements SwingerEventListener {
 				@Override
 				public void run() {
 					Frame.getInstance().getPanel().setInfoText(functions.getMessage("ConnectionToServer"));
-					try {
-						Main.auth(username.getText(), password.getText());
-					} catch (AuthenticationException e) {
-						JOptionPane.showMessageDialog(Panel.this, functions.getMessage("ConnectionError") + e.getMessage());
-						setInfoText(" ");
-						setFieldsEnabled(true);
-						return;
+					if(functions.getAuthMethod().equals("mojang")) {
+						try {
+							Main.auth(username.getText(), password.getText());
+						} catch (AuthenticationException e) {
+							JOptionPane.showMessageDialog(Panel.this, functions.getMessage("ConnectionError") + e.getMessage());
+							setInfoText(" ");
+							setFieldsEnabled(true);
+							return;
+						}
 					}
+					if(functions.getAuthMethod().equals("microsoft")) {
+						try {
+							Main.microsoftAuth(username.getText(), password.getText());
+						} catch (MicrosoftAuthenticationException e) {
+							JOptionPane.showMessageDialog(Panel.this, functions.getMessage("ConnectionError") + e.getMessage());
+							setInfoText(" ");
+							setFieldsEnabled(true);
+							return;
+						}
+					}
+					
 					
 					System.out.println(functions.getMessage("Connected"));
 					((Saver) saver).set("username", username.getText());

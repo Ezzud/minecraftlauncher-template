@@ -2,11 +2,16 @@ package fr.ezzud.defaultlauncher;
 
 public class functions {
 	public static String getSUpdate() {
-		return "S-UPDATE URL";
+		return "https://ezzud.fr/supdate/index.php/";
 	}
 	public static String getWebsite() {
 		return "YOUR WEBSITE";
 	}
+	public static String getAuthMethod() {
+		return "microsoft"; // Available: microsoft, mojang
+	}
+	
+	
 	public static String getLauncherName() {
 		return "Minecraft Launcher";
 	}

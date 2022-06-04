@@ -7,6 +7,9 @@ import java.util.Arrays;
 import fr.litarvan.openauth.AuthPoints;
 import fr.litarvan.openauth.AuthenticationException;
 import fr.litarvan.openauth.Authenticator;
+import fr.litarvan.openauth.microsoft.MicrosoftAuthResult;
+import fr.litarvan.openauth.microsoft.MicrosoftAuthenticationException;
+import fr.litarvan.openauth.microsoft.MicrosoftAuthenticator;
 import fr.litarvan.openauth.model.AuthAgent;
 import fr.litarvan.openauth.model.response.AuthResponse;
 import fr.theshark34.openlauncherlib.LaunchException;
@@ -41,20 +44,27 @@ public class Main{
 		authInfos = new AuthInfos(response.getSelectedProfile().getName(), response.getAccessToken(), response.getSelectedProfile().getId());
 	}
 	
+	public static void microsoftAuth(String username, String password) throws MicrosoftAuthenticationException {
+		MicrosoftAuthenticator authenticator = new MicrosoftAuthenticator();
+		MicrosoftAuthResult result = authenticator.loginWithCredentials(username, password);
+		authInfos = new AuthInfos(result.getProfile().getName(), result.getAccessToken(), result.getProfile().getId());
+	}
+	
 
 	public static void update() throws Exception {
 		Frame.getInstance().getPanel().setInfoText(functions.getMessage("ConnectionToServer"));
 		SUpdate su = new SUpdate(functions.getSUpdate(), MC_DIR);
 		su.addApplication(new FileDeleter());
+
 		updateThread = new Thread() {
 			private int val = 0;
 			private int max = 0;
 			
 			@Override
 			public void run() {
+				
 				Frame.getInstance().getPanel().setInfoText(functions.getMessage("ConnectionToServer"));
 				while(!this.isInterrupted()) {
-					
 					val = (int) (BarAPI.getNumberOfTotalDownloadedBytes() / 1000);
 					max = (int) (BarAPI.getNumberOfTotalBytesToDownload() / 1000);
 					Frame.getInstance().getPanel().getProgressBar().setMaximum(max);
@@ -78,6 +88,7 @@ public class Main{
 		updateThread.start();
 		
 		su.start();
+		su.setServerUrl(functions.getSUpdate().split("index.php")[0]);
 		updateThread.interrupt();
 	}
 	
