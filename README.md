@@ -19,7 +19,7 @@
 
 <p>
 
-- [OpenAuth v1.0.4](https://ezzud.fr/others/openauth-1.0.4.jar)
+- [OpenAuth v1.1.2](https://ezzud.fr/others/openauth-1.1.2.jar)
 - **FOR LAUNCHER ONLY** [OpenLauncherLib v3.0.5](https://ezzud.fr/others/openlauncherlib-3.0.5.jar)
 - **FOR BOOTSTRAP ONLY** [OpenLauncherLib v2.1](https://ezzud.fr/others/openlauncherlib-2.1-SNAPSHOT.jar)
 - [S-Update v3.1.0](https://ezzud.fr/others/s-update-3.1.0-BETA.jar)
@@ -48,6 +48,7 @@
 - Open the `src/fr.ezzud.defaultlauncher/functions.java` file
 - Edit your website url, appdata name, launcher name etc...
 - Edit messages as you want
+- Select between "microsoft" and "mojang" authentication (Microsoft is highly recommended)
 - Replace *S-UPDATE URL* by your website url where the s-update server will be hosted <br>
 💡 You can store s-update server in a folder on your website, so add the folder in your URL
 - Change textures in `fr.ezzud.defaultlauncher.resources` if you have textures...
