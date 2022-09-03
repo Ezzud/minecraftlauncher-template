@@ -1,5 +1,21 @@
 # Minecraft Launcher Template
 
+<p>
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/edit/main/README.md#-requirements">Requirements</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/edit/main/README.md#i-install-the-workspace">I Setup Workspace</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main/README.md#ii-setup-launcher">II Setup Launcher</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main/README.md#iii-setup-the-s-update-server">III Setup S-Update</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main/README.md#iv-setup-the-bootstrap">IV Setup Bootstrap</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/2.0-remake#-for-any-help-join-my-discord-at-httpsezzudfrdiscord">Support</a><br />
+</p>
+
+Launcher Demo:<br/>
+![image](https://user-images.githubusercontent.com/44119886/188251148-1d898248-5af0-4d96-801d-9c5c328ff515.png)
+
+Bootstrap Demo:<br/>
+![image](https://user-images.githubusercontent.com/44119886/188251161-403a879a-3083-4237-b76f-8f8e442f9ca1.png)
+
+
 <h2>✨ Features:</h2>
 
 <p>
@@ -56,7 +72,7 @@
 
 </p>
 
-<h3>II Edit your launcher</h3>
+<h3>II Setup Launcher</h3>
 
 <p>
 
