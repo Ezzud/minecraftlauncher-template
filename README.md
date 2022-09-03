@@ -1,4 +1,4 @@
-# Ezzud's Minecraft Launcher Template
+<h1><a href="https://github.com/Ezzud/minecraftlauncher-template"><img src="https://github.com/Ezzud/minecraftlauncher-template/raw/main/launcher/src/fr/ezzud/defaultlauncher/resources/icon.png" width="34px" height="34px"/> Ezzud's Minecraft Launcher Template</h1>
 
 <p>
 - <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#-requirements">Requirements</a><br />
