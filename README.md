@@ -1,12 +1,12 @@
 # Minecraft Launcher Template
 
 <p>
-- <a href="https://github.com/Ezzud/minecraftlauncher-template/edit/main/README.md#-requirements">Requirements</a><br />
-- <a href="https://github.com/Ezzud/minecraftlauncher-template/edit/main/README.md#i-install-the-workspace">I Setup Workspace</a><br />
-- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main/README.md#ii-setup-launcher">II Setup Launcher</a><br />
-- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main/README.md#iii-setup-the-s-update-server">III Setup S-Update</a><br />
-- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main/README.md#iv-setup-the-bootstrap">IV Setup Bootstrap</a><br />
-- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/2.0-remake#-for-any-help-join-my-discord-at-httpsezzudfrdiscord">Support</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#-requirements">Requirements</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#i-install-the-workspace">I Setup Workspace</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#ii-setup-launcher">II Setup Launcher</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#iii-setup-the-s-update-server">III Setup S-Update</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#iv-setup-the-bootstrap">IV Setup Bootstrap</a><br />
+- <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#-for-any-help-join-my-discord-at-httpsezzudfrdiscord">Support</a><br />
 </p>
 
 Launcher Demo:<br/>
