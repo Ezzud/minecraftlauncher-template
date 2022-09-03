@@ -128,7 +128,7 @@ Also you can download 1.12.2 Minecraft natives <a href="https://ezzud.fr/downloa
 3.12 - Place all selected files into the **files** folder in the S-UPDATE
 
 3.13 - Add other folders like "mods" folder or anything your launcher need<br />
-3.14 - Open the `supdate/config/ignore.list` file and add every folder and file you want not to be deleted during launcher updates<br />
+3.14 - Open the `supdate/config/ignore.list` file and add every folder and file you want not to be **deleted/replaced by original version** during launcher updates<br />
 💡 Recommended list:<br>
   ```
   options.txt
