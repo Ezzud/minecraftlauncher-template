@@ -82,9 +82,8 @@ Bootstrap Demo:<br/>
 2.3 - Replace `"https://yourwebsite.com/supdate/` by your website url where the s-update server will be hosted (Example: https://site.com/supdate/)<br />
 💡 You can store s-update server in a folder on your website, so add the folder in your URL<br />
 2.4 - Change textures in `fr.ezzud.defaultlauncher.resources` if you want to edit textures<br />
-2.5 - Open the `src/fr.ezzud.defaultlauncher/Main.java` file<br />
+2.5 - Open the `src/fr.ezzud.defaultlauncher/Main.java` file<br /><br />
 2.6 - At line 30, Change your Minecraft Game version:<br />
-
 📢 **FOR 1.7.10**: ![image](https://user-images.githubusercontent.com/44119886/188249478-bf22ceeb-5f90-47e4-9dcc-dc2720e6d366.png)<br />
 📢 **FOR 1.8 TO 1.12**: ![image](https://user-images.githubusercontent.com/44119886/188249487-4c8b31fe-f704-43d7-931e-ae2d28b5ad55.png)<br />
 📢 **FOR 1.13 TO 1.16**: ![image](https://user-images.githubusercontent.com/44119886/188249508-81200964-2a38-4fa3-8439-e8e4c09de230.png)<br /><br />
