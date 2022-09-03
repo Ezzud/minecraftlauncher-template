@@ -161,8 +161,7 @@ Also you can download 1.12.2 Minecraft natives <a href="https://ezzud.fr/downloa
 4.0 - Open or Import **bootstrap** project in your Java IDE <br />
 4.1 - Open the `src/fr.ezzud.defaultbootstrap/functions.java` file<br />
 4.2 - Edit the file with your informations<br />
-4.3 - Replace supdate URL by your supdate url with **/bootstrap** after (Example: https://yourwebsite.com/supdate/bootstrap/)<br>
-Example: "https://example.com/supdate/bootstrap/"<br />
+4.3 - Replace supdate URL by your supdate url with **/bootstrap** after the url<br />(Example: https://yourwebsite.com/supdate/bootstrap/)<br>
   ⚠ If you get 404 error, go on `https://example.com/supdate/bootstrap/index.php/`<br />
   ⚠ If after registering, you didn't get redirected, verify permission (Debian: `chmod -R 777 /var/www/html/supdate`)<br />
   ⚠ If you cannot setup password, go on <a href="https://ezzud.fr/download/server.json">this link</a> and paste content into `https://your-url.com/supdate/bootstrap/config/server.json`<br />
