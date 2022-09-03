@@ -2,38 +2,38 @@ package fr.ezzud.defaultbootstrap;
 
 public class functions {
 	public static String getSUpdateLauncher() {
-		return "YOUR S-UPDATE BOOTSTRAP FOLDER";
+		return "https://yourwebsite.com/supdate/bootstrap/";
 	}
 	public static String getWebsite() {
-		return "YOUR WEBSITE";
+		return "https://ezzud.fr";
 	}
 	public static String getLauncherName() {
-		return "Minecraft Launcher";
+		return "Minecraft Bootstrap by Ezzud";
 	}
 	public static String getAppdata() {
-		return "minecrafttestlauncher";
+		return "defaultlauncher";
 	}
 	public static String getMessage(String id) {
 		if(id == null) return "null";
 		switch(id) {
 			case "ConnectionToServer":
-				return "Connexion au serveur...";
+				return "Checking for Update...";
 			case "Connected":
-				return "Connexion effectuée...";
+				return "Successfully connected to the server...";
 			case "ConnectionError":
-				return "Erreur! Connexion impossible: ";
-			case "MissingEntry":
-				return "Erreur! L'un des champs de connexion est vide";
+				return "Erreur! Unable to connect: ";
 			case "LauncherNotStarting":
-				return "Impossible de lancer le launcher";
+				return "Unable to start Launcher, this error may appear if you have a too recent java version, note that this launcher works only with Java 8";
 			case "LauncherNotUpdating":
-				return "Impossible de mettre à jour le launcher";
+				return "Unable to update Launcher, this error may appear if you have badly written S-Update URL or the Update server is offline/unfinished";
+			case "startUpdate":
+				return "Starting Update...";
 			case "Updating":
-				return "Mise à jour...";
+				return "Updating Launcher Data...";
 			case "Updated":
-				return "Mise à jour effectuée!";
+				return "Launcher Updated!";
 			case "Verifying":
-				return "Verification...";
+				return "Checking launcher data...";
 		}
 		return "null";
 		

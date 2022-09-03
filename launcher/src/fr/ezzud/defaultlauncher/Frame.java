@@ -5,7 +5,6 @@ import java.awt.Component;
 import java.net.URISyntaxException;
 
 import javax.swing.JFrame;
-
 import fr.theshark34.openlauncherlib.util.CrashReporter;
 import fr.theshark34.swinger.Swinger;
 import fr.theshark34.swinger.util.WindowMover;
@@ -19,7 +18,7 @@ public class Frame extends JFrame {
 	public Frame() throws URISyntaxException {
 		instance = this;
 		this.setTitle(functions.getLauncherName());
-		this.setSize(650, 631);
+		this.setSize(981, 470);
 	    this.setDefaultCloseOperation(3);
 	    this.setResizable(false);
 	    this.setTitle(functions.getLauncherName());
@@ -29,7 +28,9 @@ public class Frame extends JFrame {
 	    this.setIconImage(Swinger.getResource("icon.png"));
 	    this.setBackground(new Color(0, 0, 0, 0));
 	    this.getContentPane().setBackground(new Color(0, 0, 0, 0));
+	    
 	    this.setVisible(true);
+	    
 	      
 	    WindowMover n = new WindowMover(this);
 	    this.addMouseListener(n);
