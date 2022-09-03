@@ -1,4 +1,4 @@
-# Minecraft Launcher Template
+# Ezzud's Minecraft Launcher Template
 
 <p>
 - <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#-requirements">Requirements</a><br />
@@ -9,14 +9,17 @@
 - <a href="https://github.com/Ezzud/minecraftlauncher-template/tree/main#-for-any-help-join-my-discord-at-httpsezzudfrdiscord">Support</a><br />
 </p>
 
+
+<h1>DEMO</h1>
+
 Launcher Demo:<br/>
-![image](https://user-images.githubusercontent.com/44119886/188251148-1d898248-5af0-4d96-801d-9c5c328ff515.png)
+![image](https://user-images.githubusercontent.com/44119886/188251148-1d898248-5af0-4d96-801d-9c5c328ff515.png)<br/>
 
 Bootstrap Demo:<br/>
-![image](https://user-images.githubusercontent.com/44119886/188251161-403a879a-3083-4237-b76f-8f8e442f9ca1.png)
+![image](https://user-images.githubusercontent.com/44119886/188251161-403a879a-3083-4237-b76f-8f8e442f9ca1.png)<br/>
 
 
-<h2>✨ Features:</h2>
+<h1>✨ Features</h1>
 
 <p>
 
@@ -40,7 +43,7 @@ Bootstrap Demo:<br/>
 
 </p>
 
-<h2>🛑 Requirements:</h2>
+<h1>🛑 Requirements</h1>
 
 <p>
 
@@ -57,62 +60,66 @@ Bootstrap Demo:<br/>
 
 </p>
 
-<h2>📜 Installation:</h2>
+<h1>📜 Installation</h1>
 
-<h3>I Install the workspace</h3>
+<h2>I Install the workspace</h2>
 <p>
 
 1.0 - Download all requirements from the requirement section <br />
 1.1 - Open your Java IDE (Eclipse, IntelliJ)<br />
 1.2 - Optional: With Eclipse IDE, open the ".project" file on launcher & bootstrap (Easier)<br />
-1.3 - Create a JavaProject for Launcher, AND ANOTHER for Bootstrap (⚠ Launcher & Bootstrap are 2 different programs)<br />
+1.3 - Create a JavaProject for Launcher, AND ANOTHER for Bootstrap (⚠ Launcher & Bootstrap are 2 different projects)<br />
 1.4 - Import respective launcher & bootstrap files into each project<br />
 1.5 - Import required Libraries<br />
 
 
 </p>
 
-<h3>II Setup Launcher</h3>
+<h2>II Setup Launcher</h2>
 
 <p>
 
-2.0 - Open the `src/fr.ezzud.defaultlauncher/functions.java` file<br />
-2.1 - Edit your website url, appdata name, launcher name etc...<br />
-2.2 - Edit messages as you want<br />
-2.3 - Replace `"https://yourwebsite.com/supdate/` by your website url where the s-update server will be hosted (Example: https://site.com/supdate/)<br />
+2.0 - (IDE) Open the `src/fr.ezzud.defaultlauncher/functions.java` file<br />
+2.1 - (IDE) Edit your website url, appdata name, launcher name etc...<br />
+2.2 - (IDE) Edit messages as you want<br />
+2.3 - (IDE) Replace `https://yourwebsite.com/supdate/` by your website url where the s-update server will be hosted (Example: https://site.com/supdate/)<br />
 💡 You can store s-update server in a folder on your website, so add the folder in your URL<br />
-2.4 - Change textures in `fr.ezzud.defaultlauncher.resources` if you want to edit textures<br />
-2.5 - Open the `src/fr.ezzud.defaultlauncher/Main.java` file<br /><br />
-2.6 - At line 30, Change your Minecraft Game version:<br />
+2.4 - (MISC) Change textures in `fr.ezzud.defaultlauncher.resources` if you want to edit textures<br />
+2.5 - (IDE) Open the `src/fr.ezzud.defaultlauncher/Main.java` file<br /><br />
+2.6 - (IDE) At line 30, Change your Minecraft Game version:<br />
 📢 **FOR 1.7.10**: ![image](https://user-images.githubusercontent.com/44119886/188249478-bf22ceeb-5f90-47e4-9dcc-dc2720e6d366.png)<br />
 📢 **FOR 1.8 TO 1.12**: ![image](https://user-images.githubusercontent.com/44119886/188249487-4c8b31fe-f704-43d7-931e-ae2d28b5ad55.png)<br />
 📢 **FOR 1.13 TO 1.16**: ![image](https://user-images.githubusercontent.com/44119886/188249508-81200964-2a38-4fa3-8439-e8e4c09de230.png)<br /><br />
-📢 **TO REMOVE FORGE FROM THE LAUNCHER**: <br />
-        - At line 31, Remove `new GameTweak[] { GameTweak.FORGE }` by "null"<br />
+📢 **IF YOU WANT TO REMOVE FORGE FROM THE LAUNCHER**: <br />
+        <p>
+> (IDE) At line 31, Remove `new GameTweak[] { GameTweak.FORGE }` by "null"<br />
         ![image](https://user-images.githubusercontent.com/44119886/188250349-318d708c-bda2-4099-8a0d-afac735e8678.png)<br /><br />
-2.7 - Extract your project as a Executable JAR and name it **launcher.jar** (Name is important)<br />
+</p>
+
+
+2.7 - (IDE) Extract your project as a Executable JAR and name it **launcher.jar** (Name is important)<br />
 
 </p>
 
-<h3>III Setup the S-Update server</h3>
+<h2>III Setup the S-Update server</h2>
 
 <p>
 
-3.0 - Download the s-update server zip from the requirement section<br />
-3.1 - Upload the content of the ZIP file in a folder named **supdate** in your web hoster<br />
+3.0 - (MISC) Download the s-update server zip from the requirement section<br />
+3.1 - (FTP) Upload the content of the ZIP file in a folder named **supdate** in your web hoster<br />
 3.2 - Wait for upload<br />
-3.3 - Access to the S-Update panel with `https://your-url.com/supdate`<br />
+3.3 - (WEB) Access to the S-Update panel with `https://your-url.com/supdate`<br />
   ⚠ If you get 404 error, go on `https://your-url.com/supdate/index.php/`<br />
   ⚠ If after registering, you didn't get redirected, verify permission (Debian: `chmod -R 777 /var/www/html/supdate`)<br />
   ⚠ If you cannot setup password, go on <a href="https://ezzud.fr/download/server.json">this link</a> and paste content into `https://your-url.com/supdate/config/server.json`<br />
-3.4 - Create admin credentials (to reset, delete file **server.json** at update/config/)<br />
-3.5 - Enable S-Update by clicking on the circle (if it is already green, he is already activated) <br />
-3.6 - Go on your **Appdata/Roaming/.minecraft/version** folder<br />
-3.7 - Go on the folder with the name of the version you chosen (NOT FORGE)<br />
-3.8 - Take the yourversion.jar file, copy and rename it by `minecraft.jar`<br />
-3.9- Go back to your WebHoster FTP<br />
-3.10 - Access to the `files` folder (or create it)<br />
-3.11 - Select all these files:<br>
+3.4 - (WEB) Create admin credentials (to reset, delete file **server.json** at update/config/)<br />
+3.5 - (WEB) Enable S-Update by clicking on the circle (if it is already green, he is already activated) <br />
+3.6 - (MISC) Go on your **Appdata/Roaming/.minecraft/version** folder<br />
+3.7 - (MISC) Go on the folder with the name of the version you chosen (NOT FORGE)<br />
+3.8 - (MISC) Take the yourversion.jar file, copy and rename it by `minecraft.jar`<br />
+3.9- (FTP) Go back to your WebHoster FTP<br />
+3.10 - (FTP) Access to the `files` folder (or create it)<br />
+3.11 - (FTP) Select all these files:<br>
   - `minecraft.jar` that you got before
   - `assets` folder from your .minecraft appdata folder
   - `libraries` folder from your .minecraft appdata folder (💡TIP: On Windows, go to "libraries" folder and type in search bar "*.jar", then press CTRL+A to select all libraries)
@@ -125,10 +132,10 @@ Bootstrap Demo:<br/>
 ⚠ **If you don't have "bin" folder**, try to delete the bin folder and launch your Minecraft with the correct forge version<br />
 Also you can download 1.12.2 Minecraft natives <a href="https://ezzud.fr/download/1.12.2-natives.zip">here</a><br /><br />
   
-3.12 - Place all selected files into the **files** folder in the S-UPDATE
+3.12 - (FTP) Place all selected files into the **files** folder in the S-UPDATE
 
-3.13 - Add other folders like "mods" folder or anything your launcher need<br />
-3.14 - Open the `supdate/config/ignore.list` file and add every folder and file you want not to be **deleted/replaced by original version** during launcher updates<br />
+3.13 - (FTP) Add other folders like "mods" folder or anything your launcher need (mods folder, config folder, every folder that is normally on .minecraft folder<br />
+3.14 - (FTP) Open the `supdate/config/ignore.list` file and add every folder and file you want not to be **deleted/replaced by original version** during launcher updates<br />
 💡 Recommended list:<br>
   ```
   options.txt
@@ -145,32 +152,32 @@ Also you can download 1.12.2 Minecraft natives <a href="https://ezzud.fr/downloa
   game/
   journeymap/
   ```
-3.15 - Every time you change the `files` folder in your FTP, when launcher starts it will update the new files & folders<br />
-3.16 - Save the file and now your launcher will work when you launch `launcher.jar`<br />
+3.15 - (FTP) Every time you change the `files` folder in your FTP, when launcher starts it will update the new files & folders<br />
+3.16 - (FTP) Save the file and now your launcher will work when you launch `launcher.jar`<br />
 
 <h4>🎤 If you don't want to add a launcher updater, you are free to stop reading because the next part will talk about setting-up the bootstrap</h4>
 
 </p>
 
 
-<h3>IV Setup the Bootstrap</h3>
+<h2>IV Setup the Bootstrap</h2>
 
 <p>
 
-4.0 - Open or Import **bootstrap** project in your Java IDE <br />
-4.1 - Open the `src/fr.ezzud.defaultbootstrap/functions.java` file<br />
-4.2 - Edit the file with your informations<br />
-4.3 - Replace supdate URL by your supdate url with **/bootstrap** after the url<br />(Example: https://yourwebsite.com/supdate/bootstrap/)<br>
+4.0 - (IDE) Open or Import **bootstrap** project in your Java IDE <br />
+4.1 - (IDE) Open the `src/fr.ezzud.defaultbootstrap/functions.java` file<br />
+4.2 - (IDE) Edit the file with your informations<br />
+4.3 - (IDE) Replace supdate URL by your supdate url with **/bootstrap** after the url<br />(Example: https://yourwebsite.com/supdate/bootstrap/)<br>
   ⚠ If you get 404 error, go on `https://example.com/supdate/bootstrap/index.php/`<br />
   ⚠ If after registering, you didn't get redirected, verify permission (Debian: `chmod -R 777 /var/www/html/supdate`)<br />
   ⚠ If you cannot setup password, go on <a href="https://ezzud.fr/download/server.json">this link</a> and paste content into `https://your-url.com/supdate/bootstrap/config/server.json`<br />
-4.4 - Extract the project as a JAR Executable and name it `bootstrap.jar` (not important)<br />
+4.4 - (IDE) Extract the project as a JAR Executable and name it `bootstrap.jar` (not important)<br />
 
-4.5 - **In the S-Update folder**, create a new folder named `bootstrap`<br />
-4.6 - Duplicate __the entire__ supdate folder except **bootstrap** folder and **files** folder<br />
-4.7 - In the freshly created bootstrap folder, create a `files` folder<br />
-4.8 - Upload the your launcher.jar<br />
-4.9 - Create a `Libs` folder (with the cap) and upload all libraries used in the `launcher project`<br />
+4.5 - (FTP) **In the S-Update folder**, create a new folder named `bootstrap`<br />
+4.6 - (FTP) Duplicate __the entire__ supdate folder ⚠ except **bootstrap** folder and **files** folder<br />
+4.7 - (FTP) In the freshly created bootstrap folder, create a `files` folder<br />
+4.8 - (FTP) Upload your launcher.jar (the JAR of the launcher from the Part 2)<br />
+4.9 - (FTP) Create a `Libs` folder (with the cap) and upload all libraries used in the `launcher project`<br />
 4.10 - Now when you start `bootstrap.jar` it will check if launcher is updated and if so the launcher will start<br />
 
 </p>
