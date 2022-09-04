@@ -46,7 +46,8 @@ Bootstrap Demo:<br/>
 <h1>🛑 Requirements</h1>
 
 <p>
-> **FOR LAUNCHER ONLY** [OpenAuth v1.1.2](https://ezzud.fr/download/openauth-1.1.2.jar)
+
+> **FOR LAUNCHER ONLY** [OpenAuth v1.1.2](https://ezzud.fr/download/openauth-1.1.2.jar)<br />
 > **FOR LAUNCHER ONLY** [OpenLauncherLib v3.0.5](https://ezzud.fr/download/openlauncherlib-3.0.5.jar)<br />
 > **FOR LAUNCHER ONLY** [Fernet v1.5.0](https://ezzud.fr/download/fernet-java8-1.5.0.jar)<br />
 > **FOR LAUNCHER ONLY** [Apache Commons Codec v1.15](https://ezzud.fr/download/commons-codec-1.15.jar)<br />
