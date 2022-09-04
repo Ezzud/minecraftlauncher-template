@@ -1,15 +1,17 @@
 package fr.ezzud.defaultbootstrap;
 
 import java.awt.Color;
+import java.awt.Toolkit;
 import java.io.File;
 import java.io.IOException;
+
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 
 import fr.theshark34.openlauncherlib.bootstrap.Bootstrap;
 import fr.theshark34.openlauncherlib.bootstrap.LauncherClasspath;
 import fr.theshark34.openlauncherlib.bootstrap.LauncherInfos;
-import fr.theshark34.openlauncherlib.util.ErrorUtil;
 import fr.theshark34.openlauncherlib.util.GameDir;
 import fr.theshark34.openlauncherlib.util.SplashScreen;
 import fr.theshark34.supdate.BarAPI;
@@ -21,15 +23,13 @@ public class Main {
 
 	
 	private static SplashScreen splash;
-	private static SColoredBar bar = new SColoredBar(Swinger.getTransparentWhite(100), Swinger.getTransparentWhite(175));
+	private static SColoredBar bar = new SColoredBar(Swinger.getTransparentWhite(50), Swinger.getTransparentWhite(75));
 	private static JLabel infoLabel = new JLabel(" ");
 	private static Thread barThread;
 	
 	private static final LauncherInfos MC_B_INFOS = new LauncherInfos(functions.getLauncherName(), "fr.ezzud.defaultlauncher.Frame");
 	private static final File MC_DIR = GameDir.createGameDir(functions.getAppdata());
 	private static final LauncherClasspath MC_B_CP = new LauncherClasspath(new File(MC_DIR, "launcher/launcher.jar"), new File(MC_DIR, "launcher/libs"));
-	
-	private static ErrorUtil errorUtil = new ErrorUtil(new File(MC_DIR, "launcher/crashes/"));
 	
 	public static void main(String[] args) {
 
@@ -46,13 +46,21 @@ public class Main {
 		{
 		doUpdate();
 		} catch (Exception e) {
-			errorUtil.catchError(e, functions.getMessage("LauncherNotUpdating"));
+			Toolkit.getDefaultToolkit().beep();
+			JOptionPane.showMessageDialog(splash.getContentPane(), functions.getMessage("LauncherNotUpdating"));
+			infoLabel.setText(" ");
 			barThread.interrupt();
+			System.exit(0);
+			return;
 		}
 		try {
 			launchLauncher();
 		} catch (IOException e) {
-			errorUtil.catchError(e, functions.getMessage("LauncherNotStarting"));
+			Toolkit.getDefaultToolkit().beep();
+			JOptionPane.showMessageDialog(splash.getContentPane(), functions.getMessage("LauncherNotStarting"));
+			infoLabel.setText(" ");
+			System.exit(0);
+			return;
 		}
 	}
 	private static void displaySplash() {
@@ -63,10 +71,12 @@ public class Main {
 		
 		infoLabel.setBounds(0, 562, 484, 12);
 		infoLabel.setFont(infoLabel.getFont().deriveFont(12.0F));
-		infoLabel.setForeground(Color.BLACK);
+		infoLabel.setForeground(Color.WHITE);
 		infoLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		infoLabel.setText(" ");
 		splash.add(infoLabel);
+		
+		
 		
 		bar.setBounds(0, 554, 484, 30);
 		splash.add(bar);
@@ -74,8 +84,9 @@ public class Main {
 	}
 
 	private static void doUpdate() throws Exception {
-		infoLabel.setText(functions.getMessage("ConnectionToServer"));
+		infoLabel.setText(functions.getMessage("startUpdate"));
 		SUpdate su = new SUpdate(functions.getSUpdateLauncher(), new File(MC_DIR, "launcher"));
+		su.getServerRequester().setRewriteEnabled(true);
 	
 		barThread = new Thread() {
 			private int val = 0;
@@ -83,9 +94,9 @@ public class Main {
 			@Override
 			public void run() {
 
-				
+				infoLabel.setText(functions.getMessage("Connected"));
 				while(!this.isInterrupted()) {
-					infoLabel.setText("Mise à jour launcher...");
+					infoLabel.setText(functions.getMessage("Updating"));
 					val = (int) (BarAPI.getNumberOfTotalDownloadedBytes() / 1000);
 					max = (int) (BarAPI.getNumberOfTotalBytesToDownload() / 1000);
 					bar.setValue(val); 

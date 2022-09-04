@@ -2,39 +2,45 @@ package fr.ezzud.defaultlauncher;
 
 public class functions {
 	public static String getSUpdate() {
-		return "https://ezzud.fr/supdate/index.php/";
+		return "https://yourwebsite.com/supdate/";
 	}
 	public static String getWebsite() {
-		return "YOUR WEBSITE";
+		return "https://ezzud.fr";
 	}
-	public static String getAuthMethod() {
-		return "microsoft"; // Available: microsoft, mojang
-	}
-	
 	
 	public static String getLauncherName() {
-		return "Minecraft Launcher";
+		return "Minecraft Launcher by Ezzud";
 	}
 	public static String getAppdata() {
-		return "minecrafttestlauncher";
+		return "defaultlauncher";
 	}
 	public static String getMessage(String id) {
 		if(id == null) return "null";
 		switch(id) {
+			case "MicrosoftAuth":
+			return "Trying to connect to Microsoft...";
 			case "ConnectionToServer":
-				return "Connexion au serveur...";
+				return "Checking available update...";
 			case "Connected":
-				return "Connexion effectuée...";
+				return "Connected to the server!";
+			case "startUpdate":
+				return "Starting Update...";
 			case "ConnectionError":
-				return "Erreur! Connexion impossible: ";
+				return "Unable to connect: ";
 			case "MissingEntry":
-				return "Erreur! L'un des champs de connexion est vide";
+				return "Error: One of the field is empty";
 			case "GameNotStarting":
-				return "Impossible de lancer le jeu";
+				return "Unable to launch the game";
 			case "Updating":
-				return "Mise à jour...";
+				return "Updating game data... ";
 			case "Verifying":
-				return "Verification...";
+				return "Verifying the game data... ";
+			case "confirmReset":
+				return "Do you realy want to delete all cached data? (credentials, ram, encryption key)";
+			case "errorURL":
+				return "Error while opening URL";
+			case "invalidURL":
+				return "Error: Invalid URL";
 		}
 		return "null";
 		
