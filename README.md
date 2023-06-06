@@ -47,13 +47,13 @@ Bootstrap Demo:<br/>
 
 <p>
 
-> **FOR LAUNCHER ONLY** [OpenAuth v1.1.2](https://ezzud.fr/download/openauth-1.1.2.jar)<br />
-> **FOR LAUNCHER ONLY** [OpenLauncherLib v3.0.5](https://ezzud.fr/download/openlauncherlib-3.0.5.jar)<br />
-> **FOR LAUNCHER ONLY** [Fernet v1.5.0](https://ezzud.fr/download/fernet-java8-1.5.0.jar)<br />
-> **FOR LAUNCHER ONLY** [Apache Commons Codec v1.15](https://ezzud.fr/download/commons-codec-1.15.jar)<br />
-> **FOR BOOTSTRAP ONLY** [OpenLauncherLib v2.1](https://ezzud.fr/download/openlauncherlib-2.1-SNAPSHOT.jar)<br />
-> [S-Update v3.1.0](https://ezzud.fr/download/s-update-3.1.0-BETA.jar)<br />
-> [Swinger v1.0.0](https://ezzud.fr/download/swinger-1.0.0-BETA.jar)<br />
+> **FOR LAUNCHER ONLY** [OpenAuth v1.1.2](https://beta.ezzud.fr/download/openauth-1.1.2.jar)<br />
+> **FOR LAUNCHER ONLY** [OpenLauncherLib v3.0.5](https://beta.ezzud.fr/download/openlauncherlib-3.0.5.jar)<br />
+> **FOR LAUNCHER ONLY** [Fernet v1.5.0](https://beta.ezzud.fr/download/fernet-java8-1.5.0.jar)<br />
+> **FOR LAUNCHER ONLY** [Apache Commons Codec v1.15](https://beta.ezzud.fr/download/commons-codec-1.15.jar)<br />
+> **FOR BOOTSTRAP ONLY** [OpenLauncherLib v2.1](https://beta.ezzud.fr/download/openlauncherlib-2.1-SNAPSHOT.jar)<br />
+> [S-Update v3.1.0](https://beta.ezzud.fr/download/s-update-3.1.0-BETA.jar)<br />
+> [Swinger v1.0.0](https://beta.ezzud.fr/download/swinger-1.0.0-BETA.jar)<br />
 
 > Any Web Hoster (with php incuded)<br />
 > **WEBHOSTER** [S-Update server-side v3.1.0](https://github.com/Litarvan/S-Update-Server/releases/download/3.1.0-BETA/s-update-server-3.1.0.zip)<br />
